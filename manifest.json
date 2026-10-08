@@ -1,13 +1,14 @@
 {
-  "name": "Sticky Tiempo Bilingüe",
+  "name": "Sticky Tiempo Bilingue",
   "version": "2.1.0",
   "new_install_prompt_erase": true,
   "builds": [
     {
-      "chipFamily": "ESP32",
+      "chipFamily": "esp32",
       "parts": [
         { "path": "firmware.bin", "offset": 0 }
       ]
     }
   ]
 }
+
