@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalador Sticky Tiempo</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #f4f4f7;
+            color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 { margin-bottom: 8px; font-size: 24px; }
+        p { color: #666; font-size: 15px; line-height: 1.5; margin-bottom: 24px; }
+        /* Estilo personalizado para el botón oficial de ESP */
+        esp-web-install-button {
+            --esp-tools-button-color: #111;
+            --esp-tools-button-text-color: #fff;
+            --esp-tools-button-border-radius: 8px;
+            display: inline-block;
+        }
+    </style>
+    <!-- Cargamos el script oficial de flasheo web de ESP Web Tools -->
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</head>
+<body>
+
+<div class="card">
+    <h1>Sticky Tiempo 🌤️</h1>
+    <p>Instala la última versión bilingüe en tu dispositivo de forma directa. Conecta el dispositivo por USB al ordenador y pulsa el botón de abajo.</p>
+    
+    <!-- Este componente genera el botón de conectar y flasear de forma automática -->
+    <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+</div>
+
+</body>
+</html>
